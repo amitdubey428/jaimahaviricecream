@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- <link rel="shortcut icon" href="images/star.png" type="favicon/ico" /> -->
 
-    <title>Jai Mahavir Icecream</title>
+    <title>Jay Mahavir Icecream</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
@@ -28,22 +28,42 @@
       });
     </script>
 
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script
+      src="http://maps.google.com/maps/api/js?key=AIzaSyCz_hhD8p04pMLddZzma8xB6auOSJeub-4"
+      type="text/javascript"
+    ></script>
     <script>
       function initialize() {
+        var locations = [
+          ["Jay Mahavir Icecream Ankleshwar", 21.6065026, 73.0306788, 1],
+          ["Branch 2", 21.603463, 73.0314687, 2],
+        ];
         var mapCanvas = document.getElementById("map-canvas");
         var mapOptions = {
-          center: new google.maps.LatLng(24.909439, 91.8338),
-          zoom: 16,
+          center: new google.maps.LatLng(21.6065026, 73.0306788),
+          zoom: 15,
           scrollwheel: false,
           mapTypeId: google.maps.MapTypeId.ROADMAP,
         };
         var map = new google.maps.Map(mapCanvas, mapOptions);
+        var infowindow = new google.maps.InfoWindow();
 
-        var marker = new google.maps.Marker({
-          position: new google.maps.LatLng(24.909439, 91.8338),
-          title: "Jai Mahavir Icecream",
-        });
+        for (i = 0; i < locations.length; i++) {
+          marker = new google.maps.Marker({
+            position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+            map: map,
+          });
+          google.maps.event.addListener(
+            marker,
+            "click",
+            (function (marker, i) {
+              return function () {
+                infowindow.setContent(locations[i][0]);
+                infowindow.open(map, marker);
+              };
+            })(marker, i)
+          );
+        }
 
         // To add the marker to the map, call setMap();
         marker.setMap(map);
@@ -81,11 +101,16 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#about">about</a></li>
             <li><a href="#pricing">pricing</a></li>
-            <li><a href="#great-place-to-enjoy">beer</a></li>
             <li><a href="#breakfast">bread</a></li>
             <li><a href="#featured-dish">featured</a></li>
-            <li><a href="#reserve">reservation</a></li>
-            <li><a href="#contact">contact</a></li>
+            <li>
+              <a href="#reservation">
+                <button name="contact" class="btn btn-contact">
+                  <i class="fa fa-check-circle-o"></i>
+                  Contact Us!
+                </button>
+              </a>
+            </li>
           </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -286,12 +311,6 @@
                       class="img-responsive"
                       alt="Food"
                     />
-                    <div class="menu-desc">
-                      <span>
-                        <h3>Chicken Dish</h3>
-                        Quis nostrud exercitation ullamco laboris
-                      </span>
-                    </div>
                   </a>
 
                   <h2 class="white">$22</h2>
@@ -663,7 +682,7 @@
                   </div>
                 </div>
                 <div class="row">
-                  <div class="menu-item">
+                  <!-- <div class="menu-item">
                     <h3 class="menu-title">Chicken Balls</h3>
                     <p class="menu-about">Astronomy compels the soul</p>
 
@@ -677,7 +696,7 @@
                         <p class="price">$90.00</p>
                       </div>
                     </div>
-                  </div>
+                  </div> -->
                 </div>
               </div>
 
@@ -687,7 +706,7 @@
                     <h2>Special</h2>
                   </div>
                 </div>
-                <div class="row">
+                <!-- <div class="row">
                   <div class="menu-item">
                     <h3 class="menu-title">Chicken Balls</h3>
                     <p class="menu-about">Astronomy compels the soul</p>
@@ -703,7 +722,7 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> -->
                 <div class="row">
                   <div class="menu-item">
                     <h3 class="menu-title">Bacon</h3>
@@ -840,7 +859,7 @@
     </section>
     <!-- /#reserve -->
 
-    <section class="reservation">
+    <section class="reservation" id="reservation">
       <img
         class="img-responsive section-icon hidden-sm hidden-xs"
         src="images/icons/reserve_color.png"
@@ -990,7 +1009,7 @@
       </div>
     </div>
 
-    <section class="contact-form">
+    <!-- <section class="contact-form">
       <div class="container">
         <div class="row">
           <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
@@ -1058,7 +1077,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <footer>
       <div class="container">
@@ -1066,8 +1085,7 @@
           <div class="col-md-6 col-md-offset-3">
             <div class="copyright text-center">
               <p>
-                &copy; Copyright, 2015 <a href="#">Your Website Link.</a> Theme
-                by
+                &copy; Copyright, 2022 <a href="#">MyCityAnkleshwar</a> Theme by
                 <a href="http://themewagon.com/" target="_blank">ThemeWagon</a>
               </p>
             </div>

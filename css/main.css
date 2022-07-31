@@ -101,6 +101,15 @@ body {
   margin: 20px 0px;
 }
 
+.btn-contact {
+  background-color: #4e3a91;
+  padding: 10px 30px;
+  font-weight: 20px;
+  box-shadow: 0px 2px 5px #5e5b5b;
+  color: rgb(0, 0, 0);
+  margin-top: -10px;
+}
+
 .btn-send:hover,
 .btn-reservation:hover {
   background-color: #5c9233;
@@ -193,7 +202,7 @@ textarea.empty {
   margin: 0px;
   border-radius: 0px;
   color: #3a7e92;
-  padding: 50px 0px;
+  padding: 30px 0px;
   box-shadow: 0px 2px 7px #000;
 }
 
@@ -252,7 +261,7 @@ textarea.empty {
 -----------------------------------------------*/
 
 nav.navbar.shrink {
-  max-height: 62px;
+  max-height: 70;
   padding: 12px 0px;
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -545,34 +554,42 @@ nav.shrink .navbar-toggle {
 
 .fb {
   background: url(../images/social/facebook_color.png);
+  background-size: cover;
 }
 
 .fb:hover {
   background: url(../images/social/facebook_black.png);
+  background-size: cover;
 }
 
 .twit {
   background: url(../images/social/twitter_color.png);
+  background-size: cover;
 }
 
 .twit:hover {
   background: url(../images/social/twitter_black.png);
+  background-size: cover;
 }
 
 .g-plus {
   background: url(../images/social/g-plus_color.png);
+  background-size: cover;
 }
 
 .g-plus:hover {
   background: url(../images/social/g-plus_black.png);
+  background-size: cover;
 }
 
 .link {
-  background: url(../images/social/linkedin_color.png);
+  background: url(../images/social/instagram_color2.png);
+  background-size: cover;
 }
 
 .link:hover {
-  background: url(../images/social/linkedin_black.png);
+  background: url(../images/social/instagram_black.png);
+  background-size: cover;
 }
 
 #map-canvas {
