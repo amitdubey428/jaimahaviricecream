@@ -104,9 +104,9 @@ body {
 .btn-contact {
   background-color: #4e3a91;
   padding: 10px 30px;
-  font-weight: 20px;
+  font-weight: bold;
   box-shadow: 0px 2px 5px #5e5b5b;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   margin-top: -10px;
 }
 
@@ -197,11 +197,11 @@ textarea.empty {
 ||				4. Navigation 
 ==================================================*/
 .custom-navbar-default {
-  background-color: #3a7e92;
+  background-color: #43afd0;
   border: 0px;
   margin: 0px;
   border-radius: 0px;
-  color: #3a7e92;
+  color: #43afd0;
   padding: 30px 0px;
   box-shadow: 0px 2px 7px #000;
 }
@@ -214,7 +214,7 @@ textarea.empty {
   color: #17340d;
   text-transform: uppercase;
   font-family: "Gill Sans Extrabold", sans-serif;
-  font-weight: 400;
+  font-weight: bold;
   margin: 0px 18px;
   padding: 18px 0px;
   font-size: 14px;
@@ -252,8 +252,8 @@ textarea.empty {
 }
 
 .navbar-default .navbar-collapse {
-  border-color: #3a7e92;
-  background-color: #3a7e92;
+  border-color: #43afd0;
+  background-color: #43afd0;
 }
 
 /*-----------------------------------------------
@@ -262,7 +262,7 @@ textarea.empty {
 
 nav.navbar.shrink {
   max-height: 70;
-  padding: 12px 0px;
+  padding: 15px 0px;
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -338,11 +338,19 @@ nav.shrink .navbar-toggle {
 .owl-carousel .owl-item:nth-child(2) .item {
   background: url("../images/2.jpg");
   background-size: cover;
+  background-position: center;
 }
 .owl-carousel .owl-wrapper,
 .owl-carousel .owl-item:nth-child(3) .item {
   background: url("../images/3.jpg");
   background-size: cover;
+  background-position: bottom;
+}
+.owl-carousel .owl-wrapper,
+.owl-carousel .owl-item:nth-child(4) .item {
+  background: url("../images/4.jpg");
+  background-size: cover;
+  background-position: top;
 }
 .owl-theme .owl-controls .owl-buttons div {
   position: absolute;
@@ -394,14 +402,14 @@ nav.shrink .navbar-toggle {
 /*=================================================
 ||				9. Our Beer
 ==================================================*/
-.beer .section-bg {
+.juice .section-bg {
   /*background: url('../images/beer-bg1.png'), url('../images/beer-bg2.png');
 	background-position-x: 58%, 80%;
 	background-position-y: 50%, 50%;
 	background-repeat: no-repeat, no-repeat;
 	background-size: 300px,240px;*/
 
-  background: url("../images/beer-bg1.png"), url("../images/beer-bg2.png");
+  background: url("../images/3.jpg");
   background-repeat: no-repeat, no-repeat;
 
   background-position: 51% 58%, 75% 58%;
@@ -412,7 +420,7 @@ nav.shrink .navbar-toggle {
 ||				10. Our Breakfast Menu
 ==================================================*/
 .breakfast .section-bg {
-  background-image: url("../images/OBM-bg.jpg");
+  background-image: url("../images/4.jpg");
 }
 /*=================================================
 ||				11. Our Bread
@@ -425,7 +433,7 @@ nav.shrink .navbar-toggle {
 	background-repeat: no-repeat, no-repeat;
 	background-size: 300px,240px;*/
 
-  background: url("../images/bread-bg1.png"), url("../images/bread-bg2.png");
+  background: url("../images/brownie-circle.png");
   background-repeat: no-repeat, no-repeat;
   background-position: 51% 58%, 75% 58%;
   background-size: 300px 300px, 240px 240px;
@@ -607,7 +615,7 @@ nav.shrink .navbar-toggle {
 footer {
   background-color: #8bc34a;
   color: #ffffff;
-  padding: 30px 0px;
+  padding: 30px 0px 10px 0px;
 }
 
 footer a {
@@ -713,6 +721,7 @@ footer a:hover {
 
   #filter-list li {
     font-size: 14px;
+    font-weight: bold;
   }
 
   .section-title {
@@ -803,10 +812,12 @@ footer a:hover {
   .pricing-title {
     margin-bottom: 15px;
     font-size: 25px;
+    font-weight: bold;
   }
 
   #filter-list li {
     font-size: 14px;
+    font-weight: bold;
   }
 
   #menu-pricing .item {
