@@ -70,8 +70,19 @@
       }
       window.addEventListener("load", initialize);
     </script>
+    <script type="text/javascript">
+      document.documentElement.classList.add("js");
+      // dom is loaded
+      jQuery(document).ready(function ($) {
+        // fade out preloader
+        $("#preloader").fadeOut("slow", function () {
+          $(this).remove();
+        });
+      });
+    </script>
   </head>
   <body data-spy="scroll" data-target="#template-navbar">
+    <div id="preloader"></div>
     <!--== 4. Navigation ==-->
     <nav
       id="template-navbar"
