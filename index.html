@@ -4,7 +4,8 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- <link rel="shortcut icon" href="images/star.png" type="favicon/ico" /> -->
+    <link rel="shortcut icon" href="images/star.png" type="favicon/ico" />
+    <link rel="icon" href="images/Logo.png" type="image/icon type" />
 
     <title>Jay Mahavir Icecream</title>
 
@@ -35,8 +36,9 @@
     <script>
       function initialize() {
         var locations = [
-          ["Jay Mahavir Icecream Ankleshwar", 21.6065026, 73.0306788, 1],
-          ["Branch 2", 21.603463, 73.0314687, 2],
+          ["Jay Mahavir Icecream, GIDC Ankleshwar", 21.6065026, 73.0306788, 1],
+          ["Jay Mahavir Icecream Ankleshwar", 21.6341389, 72.9904446, 2],
+          ["Jay Mahavir Icecream Bharuch", 21.7166327, 73.0262204, 3],
         ];
         var mapCanvas = document.getElementById("map-canvas");
         var mapOptions = {
@@ -69,6 +71,32 @@
         marker.setMap(map);
       }
       window.addEventListener("load", initialize);
+    </script>
+    <script type="text/javascript">
+      function send_whatsapp() {
+        let senderNum = "+919924610010";
+        let custName = document.getElementById("name");
+        let custPhone = document.getElementById("phone");
+        let custEmail = document.getElementById("email");
+        let custMsg = document.getElementById("message");
+        let msgString =
+          "Hello, I am " +
+          custName.value +
+          "\n. My Contact Number: " +
+          custPhone.value +
+          "\n. My Email is: " +
+          custEmail.value +
+          "\n. My query: " +
+          custMsg.value;
+        var win = window.open(
+          `https://wa.me/${senderNum}?text=${msgString}`,
+          "_blank"
+        );
+        custName.value = "";
+        custPhone.value = custEmail.value = custMsg.value = "";
+
+        return false;
+      }
     </script>
     <script type="text/javascript">
       document.documentElement.classList.add("js");
@@ -185,13 +213,14 @@
               <div class="section-content">
                 <h2 class="section-content-title">About us</h2>
                 <p class="section-content-para">
-                  Jay Mahavir Icecream started in by cqdsfsfsndfk sdfaslmlnww .
+                  Jay Mahavir Icecream, has been serving freshness and yumminess
+                  to it's customers from the year 2009.
                 </p>
                 <p class="section-content-para">
-                  beautiful, warm, living object looked so fragile, so delicate,
-                  that if you touched it with a finger it would crumble and fall
-                  apart. Seeing this has to change a man. Where ignorance lurks,
-                  so too do the frontiers of discovery and imagination.
+                  A dream started from Ankleshwar city, Chouta Naka Road, by Mr.
+                  Vinit Porwal, with the support of Mr. Kailash Somani, has now
+                  it's own manufacturing unit in G.I.D.C. Ankleshwar and
+                  providing delicacies to various cities!
                 </p>
               </div>
               <!-- /.section-content -->
@@ -359,23 +388,14 @@
             <div class="section-content">
               <h2 class="section-content-title">Everything Always Fresh!</h2>
               <div class="section-description">
+                <p class="section-content-para"></p>
                 <p class="section-content-para">
-                  Astronomy compels the soul to look upward, and leads us from
-                  this world to another. Curious that we spend more time
-                  congratulating people who have succeeded than encouraging
-                  people who have not. As we got further and further away, it
-                  [the Earth] diminished in size.
-                </p>
-                <p class="section-content-para">
-                  beautiful, warm, living object looked so fragile, so delicate,
-                  that if you touched it with a finger it would crumble and fall
-                  apart. Seeing this has to change a man. Where ignorance lurks,
-                  so too do the frontiers of discovery and imagination.Astronomy
-                  compels the soul to look upward, and leads us from this world
-                  to another. Curious that we spend more time congratulating
-                  people who have succeeded than encouraging people who have
-                  not. As we got further and further away, it [the Earth]
-                  diminished in size.
+                  Have you been craving for some good old fashioned ice cream?
+                  Well, we've got just the thing for you. Everything at
+                  JayMahavir Icecream is made with all natural ingredients and
+                  supervised by the owner himself, so you know it's quality!
+                  Made with high-quality ingredients and natural flavors, we're
+                  sure you'll love our icecream. Try it now!
                 </p>
               </div>
             </div>
@@ -420,17 +440,10 @@
               <h2 class="section-content-title">Our Delicacies</h2>
               <div class="section-description">
                 <p class="section-content-para">
-                  Astronomy compels the soul to look upward, and leads us from
-                  this world to another. Curious that we spend more time
-                  congratulating people who have succeeded than encouraging
-                  people who have not. As we got further and further away, it
-                  [the Earth] diminished in size.
-                </p>
-                <p class="section-content-para">
-                  beautiful, warm, living object looked so fragile, so delicate,
-                  that if you touched it with a finger it would crumble and fall
-                  apart. Seeing this has to change a man. Where ignorance lurks,
-                  so too do the frontiers of discovery and imagination.
+                  Give yourself and your tastbuds a treat and iduldge in our
+                  mouth-melting, rich, mouth-watering, range of delicacies all
+                  made from 100% Natural Ingredients! Serving Goodness and
+                  Satisfaction to you with every serving!
                 </p>
               </div>
             </div>
@@ -461,229 +474,7 @@
     </section>
     <!-- /#featured-dish -->
 
-    <!--== 13. Menu List ==-->
-    <section id="menu-list" class="menu-list">
-      <div class="container">
-        <div class="row menu">
-          <div
-            class="col-md-10 col-md-offset-1 col-sm-9 col-sm-offset-2 col-xs-12"
-          >
-            <div class="row">
-              <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="row">
-                  <div class="menu-catagory">
-                    <h2>Ice Creams</h2>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="menu-item">
-                    <h3 class="menu-title">French Bread</h3>
-                    <p class="menu-about">Astronomy compels the soul</p>
-
-                    <div class="menu-system">
-                      <div class="half">
-                        <p class="per-head">
-                          <span><i class="fa fa-user"></i></span>1:1
-                        </p>
-                      </div>
-                      <div class="half">
-                        <p class="price">149.00</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="menu-item">
-                    <h3 class="menu-title">Italian Bread</h3>
-                    <p class="menu-about">Astronomy compels the soul</p>
-
-                    <div class="menu-system">
-                      <div class="half">
-                        <p class="per-head">
-                          <span><i class="fa fa-user"></i></span>1:1
-                        </p>
-                      </div>
-                      <div class="half">
-                        <p class="price">$149.00</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="menu-item">
-                    <h3 class="menu-title">Regular Bread</h3>
-                    <p class="menu-about">Astronomy compels the soul</p>
-
-                    <div class="menu-system">
-                      <div class="half">
-                        <p class="per-head">
-                          <span><i class="fa fa-user"></i></span>1:1
-                        </p>
-                      </div>
-                      <div class="half">
-                        <p class="price">$149.00</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="row">
-                  <div class="menu-catagory">
-                    <h2>Drinks</h2>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="menu-item">
-                    <h3 class="menu-title">Regular Tea</h3>
-                    <p class="menu-about">Astronomy compels the soul</p>
-
-                    <div class="menu-system">
-                      <div class="half">
-                        <p class="per-head">
-                          <span><i class="fa fa-user"></i></span>1:1
-                        </p>
-                      </div>
-                      <div class="half">
-                        <p class="price">$20.00</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="menu-item">
-                    <h3 class="menu-title">Garlic Tea</h3>
-                    <p class="menu-about">Astronomy compels the soul</p>
-
-                    <div class="menu-system">
-                      <div class="half">
-                        <p class="per-head">
-                          <span><i class="fa fa-user"></i></span>1:1
-                        </p>
-                      </div>
-                      <div class="half">
-                        <p class="price">$30.00</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="menu-item">
-                    <h3 class="menu-title">Black Coffee</h3>
-                    <p class="menu-about">Astronomy compels the soul</p>
-
-                    <div class="menu-system">
-                      <div class="half">
-                        <p class="per-head">
-                          <span><i class="fa fa-user"></i></span>1:1
-                        </p>
-                      </div>
-                      <div class="half">
-                        <p class="price">$40.00</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="row">
-                  <div class="menu-catagory">
-                    <h2>Thick Shake</h2>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="menu-item">
-                    <h3 class="menu-title">Kaju Badam</h3>
-                    <p class="menu-about">Astronomy compels the soul</p>
-
-                    <div class="menu-system">
-                      <div class="half">
-                        <p class="per-head">
-                          <span><i class="fa fa-user"></i></span>1:1
-                        </p>
-                      </div>
-                      <div class="half">
-                        <p class="price">$70.00</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="menu-item">
-                    <h3 class="menu-title">Kaju Anjeer</h3>
-                    <p class="menu-about">Astronomy compels the soul</p>
-
-                    <div class="menu-system">
-                      <div class="half">
-                        <p class="per-head">
-                          <span><i class="fa fa-user"></i></span>1:1
-                        </p>
-                      </div>
-                      <div class="half">
-                        <p class="price">$50.00</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="row">
-                  <div class="menu-catagory">
-                    <h2>Special</h2>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="menu-item">
-                    <h3 class="menu-title">Sp. Mahavir</h3>
-                    <p class="menu-about">Astronomy compels the soul</p>
-
-                    <div class="menu-system">
-                      <div class="half">
-                        <p class="per-head">
-                          <span><i class="fa fa-user"></i></span>1:1
-                        </p>
-                      </div>
-                      <div class="half">
-                        <p class="price">$70.00</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="menu-item">
-                    <h3 class="menu-title">raj Bhog</h3>
-                    <p class="menu-about">Astronomy compels the soul</p>
-
-                    <div class="menu-system">
-                      <div class="half">
-                        <p class="per-head">
-                          <span><i class="fa fa-user"></i></span>1:1
-                        </p>
-                      </div>
-                      <div class="half">
-                        <p class="price">$50.00</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div id="moreMenuContent"></div>
-            <div class="text-center">
-              <a id="loadMenuContent" class="btn btn-middle hidden-sm hidden-xs"
-                >Load More <span class="caret"></span
-              ></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
     <!--== 14. Have a look to our dishes ==-->
-
     <section id="have-a-look" class="have-a-look hidden-xs">
       <img
         class="img-responsive section-icon hidden-sm hidden-xs"
@@ -697,13 +488,13 @@
                 <div class="flexslider">
                   <ul class="slides">
                     <li>
-                      <img src="images/menu-gallery/menu1.png" />
+                      <img src="images/menu-gallery/menu1.jpg" />
                     </li>
                     <li>
                       <img src="images/menu-gallery/menu2.jpg" />
                     </li>
                     <li>
-                      <img src="images/menu-gallery/menu3.png" />
+                      <img src="images/menu-gallery/menu3.jpg" />
                     </li>
                     <li>
                       <img src="images/menu-gallery/menu4.jpg" />
@@ -719,6 +510,9 @@
                     </li>
                     <li>
                       <img src="images/menu-gallery/menu8.jpg" />
+                    </li>
+                    <li>
+                      <img src="images/menu-gallery/menu9.jpg" />
                     </li>
                   </ul>
                 </div>
@@ -749,7 +543,10 @@
         <div class="container-fluid">
           <div class="row dis-table">
             <div class="col-xs-6 col-sm-6 dis-table-cell color-bg">
-              <h2 class="section-title">Come & Join us!</h2>
+              <h2 class="section-title">
+                Join the Journey with us!
+                <pre></pre>
+              </h2>
             </div>
             <div class="col-xs-6 col-sm-6 dis-table-cell section-bg"></div>
           </div>
@@ -771,11 +568,7 @@
           <div class="section-content">
             <div class="row">
               <div class="col-md-5 col-sm-6">
-                <form
-                  class="reservation-form"
-                  method="post"
-                  action="contact.php"
-                >
+                <form class="reservation-form" name="contact-form">
                   <div class="row">
                     <div class="col-md-6 col-sm-6">
                       <div class="form-group">
@@ -828,12 +621,10 @@
 
                     <div class="col-md-12 col-sm-12">
                       <button
-                        type="submit"
-                        id="submit"
-                        name="submit"
                         class="btn btn-reservation"
+                        onclick="send_whatsapp()"
                       >
-                        <span><i class="fa fa-check-circle-o"></i></span>
+                        <span><i class="fa fa-whatsapp"></i></span>
                         Send Your Query!
                       </button>
                     </div>
@@ -862,21 +653,35 @@
           </div>
           <div class="col-xs-6 col-sm-6 dis-table-cell">
             <div class="section-content">
-              <p>Jay Mahavir Ice Cream, Near Golden Point Chowkdi</p>
+              <p>Jay Mahavir Ice Cream</p>
+              <p>6-7 Nakshatra Complex, Near Golden Point Chowkdi</p>
               <p>GIDC Ankleshwar, Dist: Bharuch, Gujarat</p>
-              <p>+91 xsfsd</p>
-              <p>example@mail.com</p>
+              <p>&#9990; <a href="tel:+919924610010">+91 9924610010</a></p>
+              <p>&#9990; <a href="tel:+919712470091">+91 9712470091</a></p>
+              <p>
+                <a href="mailto:jaymahavir09@gmail.com"
+                  >jaymahavir09@gmail.com</a
+                >
+              </p>
             </div>
           </div>
         </div>
         <div class="social-media">
           <div class="row">
-            <div class="col-md-6 col-md-offset-3">
+            <div class="col-md-6 col-md-offset-4">
               <ul class="center-block">
-                <li><a href="#" class="fb"></a></li>
-                <li><a href="#" class="twit"></a></li>
-                <li><a href="#" class="g-plus"></a></li>
-                <li><a href="#" class="link"></a></li>
+                <li>
+                  <a
+                    href="https://instagram.com/jaymahavir_icecream_ankleshwar?igshid=NDc0ODY0MjQ="
+                    class="link"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://goo.gl/maps/u7GsZYYiesz11JBk9"
+                    class="g-plus"
+                  ></a>
+                </li>
               </ul>
             </div>
           </div>
@@ -889,76 +694,6 @@
         <div id="map-canvas"></div>
       </div>
     </div>
-
-    <!-- <section class="contact-form">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
-            <div class="row">
-              <form class="contact-form" method="post" action="contact.php">
-                <div class="col-md-6 col-sm-6">
-                  <div class="form-group">
-                    <input
-                      name="name"
-                      type="text"
-                      class="form-control"
-                      id="name"
-                      required="required"
-                      placeholder="  Name"
-                    />
-                  </div>
-                  <div class="form-group">
-                    <input
-                      name="email"
-                      type="email"
-                      class="form-control"
-                      id="email"
-                      required="required"
-                      placeholder="  Email"
-                    />
-                  </div>
-                  <div class="form-group">
-                    <input
-                      name="subject"
-                      type="text"
-                      class="form-control"
-                      id="subject"
-                      required="required"
-                      placeholder="  Subject"
-                    />
-                  </div>
-                </div>
-
-                <div class="col-md-6 col-sm-6">
-                  <textarea
-                    name="message"
-                    type="text"
-                    class="form-control"
-                    id="message"
-                    rows="7"
-                    required="required"
-                    placeholder="  Message"
-                  ></textarea>
-                </div>
-
-                <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
-                  <div class="text-center">
-                    <button
-                      type="submit"
-                      id="submit"
-                      name="submit"
-                      class="btn btn-send"
-                    >
-                      Send
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
 
     <footer>
       <div class="container">
