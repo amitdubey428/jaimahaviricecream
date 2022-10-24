@@ -17,6 +17,16 @@
     <link rel="stylesheet" href="css/flexslider.css" />
     <link rel="stylesheet" href="css/pricing.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <script type="text/javascript">
+      document.documentElement.classList.add("js");
+      // dom is loaded
+      jQuery(document).ready(function ($) {
+        // fade out preloader
+        $("#preloader").fadeOut("slow", function () {
+          $(this).remove();
+        });
+      });
+    </script>
 
     <script src="js/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" src="js/jquery.flexslider.min.js"></script>
@@ -97,16 +107,6 @@
 
         return false;
       }
-    </script>
-    <script type="text/javascript">
-      document.documentElement.classList.add("js");
-      // dom is loaded
-      jQuery(document).ready(function ($) {
-        // fade out preloader
-        $("#preloader").fadeOut("slow", function () {
-          $(this).remove();
-        });
-      });
     </script>
   </head>
   <body data-spy="scroll" data-target="#template-navbar">
@@ -453,7 +453,7 @@
     </section>
 
     <!--== 12. Our Featured Dishes Menu ==-->
-    <section id="featured-dish" class="featured-dish">
+    <section id="featured-dish" class="featured-dish hidden-sm hidden-xs">
       <img
         class="img-responsive section-icon hidden-sm hidden-xs"
         src="images/icons/food_black.png"
