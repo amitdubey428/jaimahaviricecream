@@ -17,16 +17,6 @@
     <link rel="stylesheet" href="css/flexslider.css" />
     <link rel="stylesheet" href="css/pricing.css" />
     <link rel="stylesheet" href="css/main.css" />
-    <script type="text/javascript">
-      document.documentElement.classList.add("js");
-      // dom is loaded
-      jQuery(document).ready(function ($) {
-        // fade out preloader
-        $("#preloader").fadeOut("slow", function () {
-          $(this).remove();
-        });
-      });
-    </script>
 
     <script src="js/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" src="js/jquery.flexslider.min.js"></script>
@@ -53,7 +43,7 @@
         var mapCanvas = document.getElementById("map-canvas");
         var mapOptions = {
           center: new google.maps.LatLng(21.6065026, 73.0306788),
-          zoom: 25,
+          zoom: 35,
           scrollwheel: false,
           mapTypeId: google.maps.MapTypeId.ROADMAP,
         };
@@ -107,6 +97,16 @@
 
         return false;
       }
+    </script>
+    <script type="text/javascript">
+      document.documentElement.classList.add("js");
+      // dom is loaded
+      jQuery(document).ready(function ($) {
+        // fade out preloader
+        $("#preloader").fadeOut("slow", function () {
+          $(this).remove();
+        });
+      });
     </script>
   </head>
   <body data-spy="scroll" data-target="#template-navbar">
