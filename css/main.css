@@ -690,6 +690,16 @@ footer a:hover {
 
 /*------------------------------  for small (tab) screen -------------------------*/
 
+@media (max-width: 767px) {
+  .flexslider .slides img {
+    height: 266px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .flexslider .slides img {
+    height: 434px;
+  }
+}
 @media (max-width: 991px) and (min-width: 768px) {
   .custom-navbar-default {
     padding: 15px 0px;
